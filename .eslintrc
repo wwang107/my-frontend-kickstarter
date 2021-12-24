@@ -1,0 +1,19 @@
+{
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+        "@typescript-eslint"
+    ],
+    "env": {
+        "browser": true
+    },
+    "extends": [
+        "airbnb",
+        "airbnb-typescript"
+    ],
+    "rules": {
+        "comma-dangle": [
+            "error",
+            "never"
+        ]
+    }
+}
