@@ -1,5 +1,15 @@
 {
+    "root": true,
     "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "project": "tsconfig.json",
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "ignorePatterns": "webpack*.js",
     "plugins": [
         "@typescript-eslint"
     ],
@@ -11,7 +21,9 @@
         "airbnb-typescript"
     ],
     "rules": {
-        "comma-dangle": [
+        // note you must disable the base rule as it can report incorrect errors
+        "comma-dangle": "off",
+        "@typescript-eslint/comma-dangle": [
             "error",
             "never"
         ]
