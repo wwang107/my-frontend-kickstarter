@@ -1,2 +1,2 @@
 # my-frontend-kickstarter
-Preconfigure Webpack, Hot Reload Module, Eslint
+Preconfigure Webpack, Hot Reload Module, ESlint, jest for a React project
